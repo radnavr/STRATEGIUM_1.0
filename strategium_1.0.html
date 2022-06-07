@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRATEGIUM_1.0</title>
+    <link rel="stylesheet" href="./strategium_1.0_css/style.css" />
+    <link rel="stylesheet" href="./strategium_1.0_css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nest">
+      <div class="container">
+        <h1 class="text-centered">Strategium</h1>
+        <div class="distanced">
+          <label for="attacks" class="block">number of attacks*</label>
+          <input type="number" id="attacks" min="1" max="99" required />
+        </div>
+        <div class="distanced">
+          <label for="hitsOn" class="block">hits on*</label>
+          <input type="number" id="hitsOn" min="2" max="6" required />
+        </div>
+        <div class="distanced">
+          <label for="woundsOn" class="block">wounds on*</label>
+          <input type="number" id="woundsOn" min="2" max="6" required />
+        </div>
+        <div class="distanced">
+          <label for="savesOn" class="block">saves on</label>
+          <input type="number" id="savesOn" min="2" max="6" />
+        </div>
+        <div class="distanced">
+          <label for="shrughsOn" class="block">shrughs on</label>
+          <input type="number" id="shrughsOn" min="4" max="6" />
+        </div>
+        <p id="result" class="text-centered"></p>
+        <button onclick="getAvgResult()" class="block distanced">
+          activate cogitator
+        </button>
+        <button onclick="reset()" class="block distanced">
+          set new cogitation
+        </button>
+      </div>
+    </div>
+    <script src="strategium_1.0.js"></script>
+  </body>
+</html>

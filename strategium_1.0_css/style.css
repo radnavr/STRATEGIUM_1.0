@@ -1,0 +1,90 @@
+/*GENERAL*/
+ html {
+     font-size: 85%;
+ }
+
+    @media (min-width: 1024px) {
+        html {
+            font-size: 62.5%;
+        }
+    }
+
+ body {
+     background-color: #54A87E;
+     color: #415450;
+     font-family: roboto mono;
+     font-size: 1.2 rem;
+ }
+
+/*ELEMENTS*/
+
+button {
+    background-color: #415450;
+    border-radius: 2px;
+    border: none;
+    color: #54A87E;
+    height: 3.2rem;
+    width: 100%;
+}
+
+h1 {
+    font-family: UnifrakturMaguntia;
+}
+
+input {
+    background-color: #54A87E;
+    border-radius: 2px;
+    border: 1px solid #415450;
+    box-sizing: border-box;
+    color: #415450;
+    height: 1.6rem;
+    padding-left: .2rem;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #415450;
+}
+
+label {
+    margin: 0 0 .2rem .1rem;
+}
+
+/*LAYOUT*/
+
+.block {
+    display: block;
+}
+
+.container {
+    width: 50%;
+}
+
+    @media (min-width: 1024px) {
+        .container {
+            width: 25.6rem;
+        }
+    }
+
+.distanced {
+    margin: 2.4rem 0;
+}
+
+.nest {
+    align-items: center;
+    display: flex;
+    height: 100vmax; /*!!!*/
+    justify-content: center;
+    width: 100%;
+}
+
+    @media (min-width: 1024px) {
+        .nest {
+            height: 100vh;
+        }
+    }
+
+.text-centered {
+    text-align: center;
+}
